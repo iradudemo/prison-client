@@ -1,0 +1,35 @@
+.payment-container{
+    /* background-image:linear-gradient(to right, #EC9C3D, white) ; */
+    height: 120vh;
+    padding-top: 10px;
+    background-image: url("../assets/images/pexels-andrea-piacquadio-3755440.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* opacity: 0.5; */
+}
+
+.form-content{
+    display: flex;
+    padding: 30px;
+}
+.payment-form{
+    width: 40%;
+    box-shadow: 2px 1px 2px 1px gray;
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+.payment-form h1{
+    background-image:linear-gradient(to top, #EC9C3D, white) ;
+    text-align: center;
+
+}
+label{
+    font-size: 20px;
+}
+.payment-btn{
+    margin-left: 170px;
+    padding: 10px 30px;
+    border: navajowhite;
+}

@@ -1,0 +1,27 @@
+.footerContent {
+  /* height: 20vh; */
+
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.links {
+  margin-top: 10px;
+}
+.links a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  line-height: 2;
+}
+.footer {
+  width: 100%;
+
+  background-image: linear-gradient(to top, #77889c, #0c2a4e79);
+}
+
+.footer img {
+  width: 130px;
+  margin-top: 20px;
+  margin-left: 30px;
+}

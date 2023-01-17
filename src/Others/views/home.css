@@ -1,0 +1,377 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.header {
+  display: flex;
+
+  /* justify-content: space-between; */
+}
+.logo {
+  width: 20%;
+  /* background-image: linear-gradient(to left ,yellow, #0C2A4E); */
+  background-image: linear-gradient(to top, #ec9c3d, white);
+  clip-path: polygon(0 0, 100% 0%, 89% 100%, 0% 100%);
+}
+/* .logo h2 {
+  padding: 20px 30px 10px 50px;
+} */
+.logo img {
+  width: 130px;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+.logo span {
+  color: white;
+}
+.navbar {
+  /* background-color: #77889C; */
+  background-image: linear-gradient(to top, #77889c, #0c2a4e);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid beige;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  padding-top: 10px;
+  align-items: center;
+  font-weight: bold;
+  /* padding-left: 500px; */
+}
+.navbar ul li a {
+  /* padding-left: 40px; */
+  margin-left: 30px;
+  font-size: 17px;
+  color: white;
+  position: relative;
+  right: 40px;
+  text-decoration: none;
+  /* color: black; */
+}
+/* 
+.navbar ul li a:hover{
+    border-bottom: solid 5px #EC9C3D;
+
+
+
+} */
+.navbar ul li a::after {
+  content: "";
+  width: 0%;
+  height: 7px;
+  background: #f09819; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #edde5d,
+    #f09819
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #edde5d,
+    #f09819
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  border-radius: 10px;
+  transition: all 500ms ease;
+}
+.navbar ul li a:hover::after {
+  right: 0%;
+  width: 100%;
+}
+.button {
+  background-image: linear-gradient(to top, #ec9c3d, white);
+  padding: 4px 8px;
+  border: none;
+
+  border: none;
+  /* margin: 80px; */
+  /* margin-right: 50px; */
+  border-radius: 5px;
+  border: black 1px solid;
+}
+.button h2 {
+  color: black;
+}
+.buttons {
+  margin: 20px 60px;
+}
+.home-text h1 {
+  font-size: 80px;
+  font-weight: 800;
+  color: white;
+  text-align: center;
+  line-height: 90px;
+  padding-top: 30px;
+}
+.home-background {
+  margin: 10px !important;
+  margin-right: 10px !important;
+  /* background-image: url("https://images.pexels.com/photos/2904619/pexels-photo-2904619.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"); */
+
+  background-image: url("../assets/images/background.jpg");
+
+  height: 80vh;
+  width: 99%;
+  /* clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 84%, 46% 100%, 0 84%); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* object-fit: contain; */
+
+  /* clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%,60% 10%, 50% 50%); */
+}
+.About-content {
+  width: 100%;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  /* background-color: #0C2A4E; */
+  display: flex;
+  /* padding: 100px 50px 20px 70px; */
+}
+.About-image {
+  width: 50%;
+}
+.About-image img {
+  width: 90%;
+}
+.home-contact {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
+  /* background-color: #0C2A4E; */
+  display: flex;
+  /* padding: 50px; */
+}
+.contact-one {
+  width: 50%;
+  padding-top: 100px;
+  text-align: center;
+}
+.contact-two {
+  clip-path: polygon(25% 0%, 100% 0%, 100% 99%, 0% 100%);
+  padding: 100px 95px;
+  display: flex;
+  background-color: #0c2a4e02;
+}
+.About-text {
+  padding-top: 40px;
+}
+.About-text p {
+  font-size: 20px;
+}
+.home-opacity {
+  width: 100%;
+  height: 80vh;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  display: flex;
+  /* background-color: #EC9C3D; */
+  /* background-image: linear-gradient(to top, #0c2a4e, rgba(255, 255, 255, 0.869),#ec9d3dde,#0c2a4e); */
+}
+.background-content {
+  /* width: 35%; */
+  margin-left: 20px;
+  padding: 50px 10px 30px 25px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  /* padding-top: 120px; */
+  /* background-color: #0c2a4e; */
+  background-image: linear-gradient(
+    to top,
+    #0c2a4ef3,
+    rgba(255, 255, 255, 0.928)
+  );
+}
+
+.btn {
+  margin-top: 40px;
+  margin-left: 30px;
+  padding: 5px;
+  font-size: 20px;
+  border: none;
+  background-image: linear-gradient(to top, #ec9c3d, white);
+}
+
+.home-main {
+  width: 80%;
+  margin: auto;
+  font-size: 18px;
+  height: 60vh;
+  display: flex;
+  justify-content: space-between;
+}
+.main-part1 {
+  width: 40%;
+  /* background-color: #0C2A4E; */
+  height: 100%;
+  padding-top: 130px;
+}
+.main-part2 {
+  padding-top: 30px;
+  /* width: 60%; */
+  /* background-color: #a8b1bc; */
+  height: 100%;
+  display: flex;
+
+  margin-left: 110px;
+}
+
+.card-leftOne {
+  background-color: #0c2a4ebc;
+  box-shadow: 0px 3px 15px 4px #b8b8b8;
+  border-radius: 4px;
+}
+.card-leftOne img {
+  width: 70px;
+  height: 70px;
+  margin: 20px 90px;
+  border-radius: 50%;
+}
+.card-leftOne p {
+  padding-bottom: 20px;
+  text-align: center;
+  /* padding-right: 8px; */
+  color: white;
+}
+.card-leftTwo {
+  background-color: #0c2a4e;
+  margin-top: 40px;
+  box-shadow: 0px 3px 15px 4px #b8b8b8;
+  border-radius: 4px;
+}
+.card-leftTwo img {
+  width: 70px;
+  height: 70px;
+  margin: 20px 90px;
+  border-radius: 50%;
+}
+.card-leftTwo p {
+  padding-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+.card-right {
+  background-color: #0c2a4e;
+  margin-left: 40px;
+  box-shadow: 0px 3px 15px 4px #b8b8b8;
+  border-radius: 4px;
+  /* margin-top: 80px; */
+  height: 360px;
+}
+.card-right img {
+  width: 70px;
+  height: 70px;
+  margin: 20px 90px;
+  border-radius: 50%;
+}
+.card-right p {
+  padding-bottom: 20px;
+  /* padding-left:30px; */
+  text-align: center;
+  color: white;
+}
+.home-services {
+}
+.footer {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  background-image: linear-gradient(to top, #77889c, #0c2a4e);
+}
+.col-3 h1 {
+  color: white;
+}
+.comment {
+  width: 100%;
+  height: 30vh;
+  background-color: #ec9d3d42;
+  display: flex;
+  align-items: center;
+  padding-right: 50px;
+  justify-content: space-between;
+}
+.comment-partone h3 {
+  padding-left: 20px;
+}
+.comment-parttwo {
+  width: 40%;
+  height: 10vh;
+  background-color: white;
+  border-radius: 10px;
+  justify-content: space-between;
+  display: flex;
+}
+.comment-parttwo h3 {
+  padding: 20px 30px;
+  font-size: 20px;
+}
+.comment-button {
+  /* float: right; */
+  /* margin-right: 30px;
+  margin-top: -23px; */
+  height: 70%;
+  border-radius: 10px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  margin: 10px 10px;
+}
+.contact-content h2 {
+  background-color: white;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 3vw; /* make our h1 tag larger */
+  font-family: sans-serif; /* choosing our font */
+  background: linear-gradient(
+      to right,
+      rgba(255, 215, 255, 0) 0%,
+      #0c2a4e,
+      #0c2a4e
+    ),
+    linear-gradient(#ec9d3dc0, rgb(224, 246, 255) 60%, #ec9c3d); /* you can change the colors based on your preference */
+  background-clip: text; /*it defines how far the background should extend within an element, here we set it to text */
+  -webkit-background-clip: text; /*for browsers compatibility */
+  -webkit-text-fill-color: transparent; /* specifies the fill color of text characters. We use transparent to use the background as our text fill  */
+  animation: wave 2000ms ease alternate infinite;
+  transition: all 0.4s ease;
+}
+@keyframes wave {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50vw 10px;
+  }
+}
+button a {
+  text-decoration: none;
+  font-size: 23px;
+}
+button:hover {
+  background-image: linear-gradient(to top, #ec9c3d, white);
+  border: none;
+  border-radius: 7px;
+}
+.contact-form {
+  margin-top: 30px;
+  padding: 30px;
+}
+.contact-content {
+  /* background-image: linear-gradient(to right, white, #ec9d3d20); */
+  border: 1px silver solid;
+
+  clip-path: polygon(15% 0, 100% 0, 83% 100%, 0% 100%);
+  padding-right: 60px;
+  padding-left: 60px;
+  width: 100%;
+}
