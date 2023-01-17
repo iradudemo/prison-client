@@ -49,7 +49,7 @@ export default function WithDrawer({
         aria-labelledby='modal-modal-title'
         aria-describedby='modal-modal-description'
       >
-        <Box sx={style} style={{ backgroundColor: "white" }}>
+        <Box sx={style}>
           <div style={{ width: "80%" }} ref={componentRef}>
             <h2 style={{ textAlign: "center", paddingBottom: "20px" }}>
               Recept of money status

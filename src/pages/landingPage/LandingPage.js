@@ -68,61 +68,61 @@ function Home() {
   };
 
   return (
-    <div className="home-container">
+    <div className='home-container'>
       <Drawer
-        placement="right"
-        width="40%"
+        placement='right'
+        width='40%'
         style={{
           backgroundImage: "linear-gradient(to top,  #77889c, #0c2a4e79)",
         }}
-        className="drawer"
+        className='drawer'
         onClose={onCloseDrawer}
         open={open}
       >
-        <div className="drawerContent">
-          <div className="contact-content">
+        <div className='drawerContent'>
+          <div className='contact-content'>
             <h2>Contact Us</h2>
 
-            <div className="contact-form">
+            <div className='contact-form'>
               <div style={{ display: "flex" }}>
                 <div style={{ marginRight: "30px", width: "250px" }}>
                   <TextField
                     fullWidth
-                    margin="danse"
-                    id="standard-basic"
-                    label="First name"
-                    variant="standard"
+                    margin='danse'
+                    id='standard-basic'
+                    label='First name'
+                    variant='standard'
                     value={firstname}
                     onChange={(e) => setFirstname(e.target.value)}
                   />
                 </div>
                 <div style={{ width: "250px" }}>
                   <TextField
-                    id="standard-basic"
-                    label="Second name"
-                    variant="standard"
+                    id='standard-basic'
+                    label='Second name'
+                    variant='standard'
                     fullWidth
-                    margin="danse"
+                    margin='danse'
                     value={lastname}
                     onChange={(e) => setLastname(e.target.value)}
                   />
                 </div>
               </div>
               <TextField
-                id="standard-basic"
+                id='standard-basic'
                 fullWidth
-                margin="danse"
-                label="Email"
-                variant="standard"
+                margin='danse'
+                label='Email'
+                variant='standard'
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
               <br /> <br /> <br />
               <TextField
                 fullWidth
-                label="Message"
-                id="fullWidth"
-                height="300px"
+                label='Message'
+                id='fullWidth'
+                height='300px'
                 value={content}
                 onChange={(e) => setContent(e.target.value)}
               />
@@ -145,31 +145,31 @@ function Home() {
       </Drawer>
 
       <HeaderLand />
-      <div className="home-background">
-        <div className="home-opacity">
-          <div className="background-content" id="transaction">
+      <div className='home-background'>
+        <div className='home-opacity'>
+          <div className='background-content' id='transaction'>
             <h2>
               Make your Transaction & it will be derivered to your inmate very
               soon as possible
             </h2>
-            <div className="buttons">
-              <button className="button btn">How is it done</button>
+            <div className='buttons'>
+              <button className='button btn'>How is it done</button>
               <button
-                className="button btn"
+                className='button btn'
                 onClick={() => setOpenPayment(true)}
               >
                 <a>Make Transaction</a>{" "}
               </button>
             </div>
           </div>
-          <div className="home-text">
+          <div className='home-text'>
             <h1>Let us support our Inmates</h1>
           </div>
         </div>
       </div>
       <UserPayment openPayment={openPayment} setOpenPayment={setOpenPayment} />
-      <main className="home-main">
-        <div className="main-part1">
+      <main className='home-main'>
+        <div className='main-part1'>
           <h2>Our core services</h2>
           <p>
             Make your Transaction & it will be derivered to your <br /> inmate
@@ -178,64 +178,61 @@ function Home() {
             very soon as possible
           </p>
         </div>
-        <div className="main-part2">
-          <div className="card-left">
-            <div className="card-leftOne">
+        <div className='main-part2'>
+          <div className='card-left'>
+            <div className='card-leftOne'>
               <img src={deliver} />
               <p>Transfer money to inmate</p>
             </div>
 
-            <div className="card-leftTwo">
+            <div className='card-leftTwo'>
               <img src={money} />
               <p>Faster deliver and accurate</p>
             </div>
           </div>
 
-          <div className="card-right">
+          <div className='card-right'>
             <img src={park} />
             <p>visit inmate </p>
           </div>
         </div>
-        <div className="home-services">
-          <div className="servicesCardOne"></div>
-          <div className="servicesCardTwo"></div>
+        <div className='home-services'>
+          <div className='servicesCardOne'></div>
+          <div className='servicesCardTwo'></div>
         </div>
       </main>
 
-      <div className="About-content" id="about">
-        <div className="About-image">
+      <div className='About-content' id='about'>
+        <div className='About-image'>
           <img src={undraw} />
         </div>
-        <div className="About-text">
+        <div className='About-text'>
           <h2>
             <b>
               We provide a solution through quick and efficiency transaction
             </b>
           </h2>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting{" "}
+            Giving people in prison access to their financial transactions
             <br />
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            <br />
-            ever since the 1500s, when an unknown printer took a galley of type
-            <br />
-            and scrambled it to make a type specimen book. It has survived not
-            <br />
-            only five centuries, but also the leap into electronic typesetting,
-            <br />
-            remaining essentially unchanged
+            If you haven't heard of our service before,this is an online
+            platform <br />
+            accessed via in-cell laptops, designed to support people <br />
+            in custody and free up staff time. We’re currently live in
+            NYARUGENGE prisons (male and female) <br /> and now and in the
+            process of rolling out to many more
           </p>
         </div>
       </div>
 
-      <div className="home-contact" id="contact">
-        <div className="contact-one">
+      <div className='home-contact' id='contact'>
+        <div className='contact-one'>
           <h1>Chart with us</h1>
           <h1>
             <b>Let's talk About our product to you!!</b>
           </h1>
         </div>
-        <div className="contact-two">
+        <div className='contact-two'>
           <div>
             <button
               style={{
@@ -257,16 +254,16 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="comment">
-        <div className="comment-partone">
+      <div className='comment'>
+        <div className='comment-partone'>
           <h3>
             Leave comment about our services so that our service will be more
             effectivelly and efficiantlly
           </h3>
         </div>
-        <div className="comment-parttwo">
+        <div className='comment-parttwo'>
           <h3>your email</h3>
-          <button className="comment-button">subscribe</button>
+          <button className='comment-button'>subscribe</button>
         </div>
       </div>
 
